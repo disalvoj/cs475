@@ -3,11 +3,11 @@
 #include <cmath>
 #include <cstdlib>
 
-#define NUMTHREADS 4
 #define ARRAYSIZE 100000
-#define NUMTRIES 100
+#define NUMTRIES 100000
 
 void fill_array(float *arry, int size);
+double average_mega_mults(const float *A, const float *B, int threads);
 
 int main(void) {
     
@@ -18,13 +18,32 @@ int main(void) {
 
     float A[ARRAYSIZE];
     float B[ARRAYSIZE];
-    float C[ARRAYSIZE];
 
     fill_array(A, ARRAYSIZE);
     fill_array(B, ARRAYSIZE);
 
-    omp_set_num_threads(NUMTHREADS);
-    std::printf("Using %d threads.\n", NUMTHREADS);
+	double ave_1_threads = average_mega_mults(A, B, 1);
+	double ave_4_threads = average_mega_mults(A, B, 4);
+
+    return 0;
+}
+
+
+void fill_array(float *arry, int size) {
+
+    std::srand(omp_get_wtime());
+
+    for(int i = 0; i < size; i++)
+        arry[i] = (double) (std::rand() % 10000);
+
+}
+
+
+double average_mega_mults(const float *A, const float *B, int threads) {
+
+    float C[ARRAYSIZE];
+
+    omp_set_num_threads(threads);
 
     double max = 0;
     double sum = 0;
@@ -43,20 +62,11 @@ int main(void) {
 
     }
     double ave = sum / (double) NUMTRIES;
+    std::printf("\nUsing %d threads.\n", threads);
     std::printf("Best run: %8.2lf MegaMults/s\n", max);
     std::printf("Average: %8.2lf MegaMults/s\n", ave);
 
-    return 0;
-}
-
-
-void fill_array(float *arry, int size) {
-
-    std::srand(omp_get_wtime());
-
-    for(int i = 0; i < size; i++)
-        arry[i] = (double) (std::rand() % 10000);
-
+	return ave;
 }
 
 
