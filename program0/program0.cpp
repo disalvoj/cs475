@@ -25,6 +25,11 @@ int main(void) {
 	double ave_1_threads = average_mega_mults(A, B, 1);
 	double ave_4_threads = average_mega_mults(A, B, 4);
 
+	double s = ave_4_threads / ave_1_threads;
+	double f = (4. / 3.) * (1. - (1. / s));
+	
+	std::printf("\nSpeedup: %8.2lf\nParallel fraction: %8.2lf\n", s, f);
+
     return 0;
 }
 
@@ -62,11 +67,10 @@ double average_mega_mults(const float *A, const float *B, int threads) {
 
     }
     double ave = sum / (double) NUMTRIES;
-    std::printf("\nUsing %d threads.\n", threads);
+    std::printf("\nUsing %d threads:\n", threads);
     std::printf("Best run: %8.2lf MegaMults/s\n", max);
-    std::printf("Average: %8.2lf MegaMults/s\n", ave);
+    std::printf("Average:  %8.2lf MegaMults/s\n", ave);
 
 	return ave;
 }
-
 

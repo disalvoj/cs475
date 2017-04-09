@@ -1,6 +1,6 @@
 all: program0
 
-program0:
+program0: program0.cpp
 	g++ -o program0 program0.cpp -lm -fopenmp
 
 clean:
