@@ -56,7 +56,7 @@
 #define BOTZ23  -8.
 #define BOTZ33  -3.
 
-float circle_height(int iu, int iv) {
+float test_height(int iu, int iv) {
 	
 	
 	
@@ -106,7 +106,7 @@ int main(int argc, char *argv[]) {
 	
 	omp_set_num_threads(NUMTHREADS);
 	
-	float volume = 0.0;
+	double volume = 0.0;
 	double dx = (float)(XMAX - XMIN)/(float)NUMNODES;
 	double dy = (float)(YMAX - YMIN)/(float)NUMNODES;
 	
@@ -117,10 +117,10 @@ int main(int argc, char *argv[]) {
 		int iy = i / NUMNODES;
 		
 		//calculate full tile volume
-		//double dvolume = dx*dy*Height(ix, iy);
+		double dvolume = dx*dy*Height(ix, iy);
 		
 		//testing call
-		double dvolume = dx*dy*circle_height(ix, iy);
+		//double dvolume = dx*dy*test_height(ix, iy);
 		
 		//reduce by half if on x axis edge
 		if(ix == 0 || ix == NUMNODES - 1)
@@ -133,7 +133,10 @@ int main(int argc, char *argv[]) {
 		
 	}
 	
-	std::fprintf(datafile, "%d, %d, %lf, %lf\n", NUMTHREADS, NUMNODES, volume, omp_get_wtime() - t_not);
+	//calculate the mega volumes per second to compare performance
+	double mega_vols = (double)(NUMNODES*NUMNODES) / (omp_get_wtime() - t_not) / 1000000;
+	
+	std::fprintf(datafile, "%d, %d, %lf, %lf\n", NUMTHREADS, NUMNODES, volume, mega_vols);
 	std::fclose(datafile);
 	
 	
