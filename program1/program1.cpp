@@ -1,6 +1,6 @@
 /*
  * Author: Joshua Kluthe
- * Date: 2017.04.15
+ * Date: 2017.04.17
  * 
  * Description: This program estimates the volume between two Bezier
  * surfaces using OpenMP multi-processing for improved performance.
@@ -58,8 +58,6 @@
 
 float test_height(int iu, int iv) {
 	
-	
-	
 	return 1.0;
 }
 
@@ -100,6 +98,11 @@ float Height( int iu, int iv )	// iu,iv = 0 .. NUMNODES - 1
 //argv[1] = name of file to append data to
 int main(int argc, char *argv[]) {
 	
+#ifndef _OPENMP
+    std::fprintf(stderr, "OpenMP not supported, exiting program.\n");
+    return 1;
+#endif
+	
 	FILE *datafile = std::fopen(argv[1], "a");
 	
 	omp_set_num_threads(NUMTHREADS);
@@ -124,10 +127,10 @@ int main(int argc, char *argv[]) {
 			int iy = i / NUMNODES;
 			
 			//calculate full tile volume
-			//double dvolume = dx*dy*Height(ix, iy);
+			double dvolume = dx*dy*Height(ix, iy);
 			
 			//testing call
-			double dvolume = dx*dy*test_height(ix, iy);
+			//double dvolume = dx*dy*test_height(ix, iy);
 			
 			//reduce by half if on x axis edge
 			if(ix == 0 || ix == NUMNODES - 1)
@@ -147,7 +150,6 @@ int main(int argc, char *argv[]) {
 		ave_mega_calcs += mega_calcs;
 		
 	}
-	
 	
 	std::fprintf(datafile, "%d, %d, %lf, %lf, %lf\n", NUMTHREADS, NUMNODES, volume, max_mega_calcs, ave_mega_calcs/100);
 	std::fclose(datafile);
