@@ -100,43 +100,56 @@ float Height( int iu, int iv )	// iu,iv = 0 .. NUMNODES - 1
 //argv[1] = name of file to append data to
 int main(int argc, char *argv[]) {
 	
-	double t_not = omp_get_wtime();
-	
 	FILE *datafile = std::fopen(argv[1], "a");
 	
 	omp_set_num_threads(NUMTHREADS);
 	
-	double volume = 0.0;
+	double volume;
+	
 	double dx = (float)(XMAX - XMIN)/(float)NUMNODES;
 	double dy = (float)(YMAX - YMIN)/(float)NUMNODES;
 	
-	#pragma omp parallel for default(none), shared(dx, dy), reduction(+:volume)
-	for(int i = 0; i < NUMNODES*NUMNODES; i++) {
+	double ave_mega_calcs = 0;
+	double max_mega_calcs = 0;
+	
+	for(int j = 0; j < 100; j++) {
+	
+		double t_not = omp_get_wtime();
+		volume = 0.0;
 		
-		int ix = i % NUMNODES;
-		int iy = i / NUMNODES;
+		#pragma omp parallel for default(none), shared(dx, dy), reduction(+:volume)
+		for(int i = 0; i < NUMNODES*NUMNODES; i++) {
+			
+			int ix = i % NUMNODES;
+			int iy = i / NUMNODES;
+			
+			//calculate full tile volume
+			//double dvolume = dx*dy*Height(ix, iy);
+			
+			//testing call
+			double dvolume = dx*dy*test_height(ix, iy);
+			
+			//reduce by half if on x axis edge
+			if(ix == 0 || ix == NUMNODES - 1)
+				dvolume *= 0.5;
+			//reduce by half if on y axis edge
+			if(iy == 0 || iy == NUMNODES - 1)
+				dvolume *= 0.5;
+			//add to volume
+			volume += dvolume;
+			
+		}
 		
-		//calculate full tile volume
-		double dvolume = dx*dy*Height(ix, iy);
-		
-		//testing call
-		//double dvolume = dx*dy*test_height(ix, iy);
-		
-		//reduce by half if on x axis edge
-		if(ix == 0 || ix == NUMNODES - 1)
-			dvolume *= 0.5;
-		//reduce by half if on y axis edge
-		if(iy == 0 || iy == NUMNODES - 1)
-			dvolume *= 0.5;
-		//add to volume
-		volume += dvolume;
+		//calculate millions of delta volume calcs per second
+		double mega_calcs = (double)(NUMNODES*NUMNODES) / (omp_get_wtime() - t_not) / 1000000;
+		if(mega_calcs > max_mega_calcs)
+			max_mega_calcs = mega_calcs;
+		ave_mega_calcs += mega_calcs;
 		
 	}
 	
-	//calculate the mega volumes per second to compare performance
-	double mega_vols = (double)(NUMNODES*NUMNODES) / (omp_get_wtime() - t_not) / 1000000;
 	
-	std::fprintf(datafile, "%d, %d, %lf, %lf\n", NUMTHREADS, NUMNODES, volume, mega_vols);
+	std::fprintf(datafile, "%d, %d, %lf, %lf, %lf\n", NUMTHREADS, NUMNODES, volume, max_mega_calcs, ave_mega_calcs/100);
 	std::fclose(datafile);
 	
 	
