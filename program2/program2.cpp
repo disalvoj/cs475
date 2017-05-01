@@ -12,7 +12,7 @@
 #include <cstdlib>
 #include <omp.h>
 
-#define ARRYSIZE 8192
+#define ARRYSIZE 32*1024
 
 float arry[ARRYSIZE];
 
@@ -59,6 +59,7 @@ int main(int argc, char *argv[]) {
 				product *= arry[j];			
 			}		
 		}
+		//add up the mega_mults. This will be averaged before printing out
 		mega_mults += (double) nums_muled / (omp_get_wtime() - t_not) / 1000000;
 	}
 
@@ -67,7 +68,6 @@ int main(int argc, char *argv[]) {
 		
 	return 0;	
 }
-
 
 
 float rand_float(unsigned int *seedp, float low, float high) {
