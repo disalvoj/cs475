@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
 	double mega_mults = 0;
 
 	//outer loop gets 100 data points that we will average
-	for(int k = 0; k < 1; k++) {
+	for(int k = 0; k < 100; k++) {
 
 		double t_not = omp_get_wtime();
 
