@@ -20,7 +20,7 @@ def main():
 		#advance to new line in datafile and write number of threads in first col
 		#program2 itself will write the performance data in the appropriate col
 		with open(datafile, "a") as f:
-			f.write("\n{}".format(threads))
+			f.write("\n{}, ".format(threads))
 		for sched in ["static", "dynamic"]:
 			for chunk in [1, 4096]:
 				cmd = ("g++ -DNUMT={} -DSCHED={} -DCHUNK={} program2.cpp -o "
