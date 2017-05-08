@@ -94,6 +94,10 @@ int main(int argc, char *argv[]) {
 	
 	//print out NUMPAD, peak MegaAdds/s, average MegaAdds/s
 	std::fprintf(datafile, "%d, %.2lf, %.2lf\n", NUMPAD, peak/1000000., average/(1000000.*ave_iters));
+	//print out 15 more data points for FIX 2 to make graphing easy	
+	if(FIX == 2)
+		for(int p = 0; p < 15; p++)
+			std::fprintf(datafile, "%d, %.2lf, %.2lf\n", NUMPAD, peak/1000000., average/(1000000.*ave_iters));
 	std::fclose(datafile);
 			
 	return 0;	
