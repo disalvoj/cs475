@@ -2,8 +2,8 @@
  * Author: Joshua Kluthe
  * Date: 2017.05.01
  * 
- * Description: This program compares performance between static and dynamic 
- * scheduling and between using large and small chunk sizes.
+ * Description: This program compares using padding vs using a private temp 
+ * variable to fix false sharing issues.
  * 
  */
 
@@ -20,7 +20,7 @@ struct s {
 } arry[ARRAYSIZE];
 
 //number of inner loop iterations
-const int iters = 1000000000;
+const int iters = 10000000;
 
 float rand_float(unsigned int *seedp, float low, float high);
 
@@ -93,7 +93,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	//print out NUMPAD, peak MegaAdds/s, average MegaAdds/s
-	std::fprintf(datafile, "%d, %lf, %lf", NUMPAD, peak/1000000, average/1000000);
+	std::fprintf(datafile, "%d, %.2lf, %.2lf\n", NUMPAD, peak/1000000., average/(1000000.*ave_iters));
 	std::fclose(datafile);
 			
 	return 0;	

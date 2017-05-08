@@ -16,10 +16,11 @@ def main():
 	datafile = "data.csv"
 	#create or truncate the file
 	with open(datafile, "w") as f:
-		f.write("Total processors available: {}".format(cpu_count()))
+		f.write("Total processors available: {}\n".format(cpu_count()))
 	for threads in [1, 2, 4, 6, 8, 10, 12, 14, 16]:
 		with open(datafile, "a") as f:
-			f.write("\n{} Threads, Fix #1".format(threads))
+			f.write("{} Threads, Fix #1\n".format(threads))
+			f.write("NUMPAD, Peak Mega Adds, Ave Mega Adds\n")
 		#compile and run for Fix #1		
 		for pad in range(16):
 			cmd = ("g++ -DNUMT={} -DFIX={} -DNUMPAD={} program3.cpp -o "
@@ -30,6 +31,7 @@ def main():
 		#compile and run for Fix #2
 		with open(datafile, "a") as f:
 			f.write("\n{} Threads, Fix #2".format(threads))
+			f.write("NUMPAD, Peak Mega Adds, Ave Mega Adds\n")
 		cmd = ("g++ -DNUMT={} -DFIX={} -DNUMPAD={} program3.cpp -o "
 				"program3 -lm -fopenmp").format(threads, 2, 0)
 		system(cmd)
