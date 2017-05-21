@@ -24,9 +24,11 @@ def main():
     with open(datafile, "w") as f:
         f.write("Total processors available: {}\n".format(cpu_count()))
     with open(speedup_data, "w") as f:
-        f.write("Speedup Data (C++ Speed / SIMD SSE Speed)")
-    start = 1000
-    end = 32000000
+        f.write("Speedup Data (C++ Speed / SIMD SSE Speed)\n")
+    #build a list of array sizes to test
+    array_sizes = list(range(1000, 100000, 15000))
+    array_sizes += list(range(100000, 1000001, 100000))
+    array_sizes += list(range(2000000, 32000001, 3000000))
     tests = ["SIMD SSE Multiplication vs C++ Multiplication",
         "SIMD SSE Multiplication/Reduction vs C++ Multiplication/Reduction"]
     for test in tests:
@@ -34,7 +36,8 @@ def main():
             f.write("\nTesting {}\n".format(test))
         with open(speedup_data, "a") as f:
             f.write("{}\n".format(test))
-        for size in list(range(start, end, int((end - start)/20))) + [end]:
+            f.write("Array Size,Peak Speedup,Average Speedup\n")
+        for size in array_sizes:
             cmd = ("g++ -DARRAY_SIZE={} "
                 "-DTEST={} program5.cpp simd.p5.cpp -o program5 -lm "
                 "-fopenmp").format(size, tests.index(test))
