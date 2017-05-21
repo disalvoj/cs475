@@ -129,14 +129,14 @@ int main(int argc, char *argv[]) {
 
 	std::fprintf(datafile, "Normal C++ Data:\n"
 		"Array Size,Peak Speed,Average Speed\n"
-		"%d,%f,%f\n", ARRAY_SIZE, cpp_peak_time, cpp_ave_time);
+		"%d,%.8f,%.8f\n", ARRAY_SIZE, cpp_peak_time, cpp_ave_time);
 
 	std::fprintf(datafile, "SIMD SSE Data:\n"
 		"Array Size,Peak Speed,Average Speed\n"
-		"%d,%f,%f\n", ARRAY_SIZE, sse_peak_time, sse_ave_time);
+		"%d,%.8f,%.8f\n", ARRAY_SIZE, sse_peak_time, sse_ave_time);
 	std::fprintf(datafile, "Speedup Data (C++ Speed / SIMD SSE Speed):\n"
 		"Array Size,Peak Speedup,Average Speedup\n"
-		"%d,%f,%f\n", ARRAY_SIZE, cpp_peak_time, cpp_ave_time);
+		"%d,%.8f,%.8f\n", ARRAY_SIZE, cpp_peak_time / sse_peak_time, cpp_ave_time / sse_ave_time);
 
 	std::fclose(datafile);
 			
