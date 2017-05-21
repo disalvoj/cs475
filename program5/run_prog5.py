@@ -34,6 +34,8 @@ def main():
             system(cmd)
             cmd = "./program5 {}".format(datafile)
             system(cmd)
+            with open(datafile, "a") as f:
+                f.write("\nDone Testing.\n")
     #append some newlines for nice formatting just because
     with open(datafile, "a") as f:
         f.write("\n\n\n")
