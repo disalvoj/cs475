@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
 	float sse_ave_time = 0;
 	float sse_peak_time = 1000000;
 
-	const int loops_for_ave = 1;
+	const int loops_for_ave = 200;
 
 	double t_not;
 	double t;

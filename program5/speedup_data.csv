@@ -1,63 +1,44 @@
 Speedup Data (C++ Speed / SIMD SSE Speed)SIMD SSE Multiplication vs C++ Multiplication
-1000,5.15131569,5.15131569
-SIMD SSE Multiplication vs C++ Multiplication
-1600950,4.61118937,4.61118937
-SIMD SSE Multiplication vs C++ Multiplication
-3200900,4.42873764,4.42873764
-SIMD SSE Multiplication vs C++ Multiplication
-4800850,4.38420343,4.38420343
-SIMD SSE Multiplication vs C++ Multiplication
-6400800,3.83392119,3.83392119
-SIMD SSE Multiplication vs C++ Multiplication
-8000750,4.33745384,4.33745384
-SIMD SSE Multiplication vs C++ Multiplication
-9600700,3.87081361,3.87081361
-SIMD SSE Multiplication vs C++ Multiplication
-11200650,4.32572269,4.32572269
-SIMD SSE Multiplication vs C++ Multiplication
-12800600,4.30579615,4.30579615
-SIMD SSE Multiplication vs C++ Multiplication
-14400550,4.22732306,4.22732306
-SIMD SSE Multiplication vs C++ Multiplication
-16000500,4.23337078,4.23337078
-SIMD SSE Multiplication vs C++ Multiplication
-17600450,4.16255236,4.16255236
-SIMD SSE Multiplication vs C++ Multiplication
-19200400,4.30272436,4.30272436
-SIMD SSE Multiplication vs C++ Multiplication
-20800350,4.35693359,4.35693359
-SIMD SSE Multiplication vs C++ Multiplication
-22400300,4.30187559,4.30187559
-SIMD SSE Multiplication vs C++ Multiplication
-24000250,4.32529545,4.32529545
-SIMD SSE Multiplication vs C++ Multiplication
-25600200,4.28165483,4.28165483
-SIMD SSE Multiplication vs C++ Multiplication
-27200150,4.23087358,4.23087358
-SIMD SSE Multiplication vs C++ Multiplication
-28800100,4.30013227,4.30013227
-SIMD SSE Multiplication vs C++ Multiplication
-30400050,4.24949694,4.24949694
-SIMD SSE Multiplication vs C++ Multiplication
-32000000,4.23637390,4.23637390
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+1000,5.74416685,5.57024860
+1600950,2.75297999,2.74971294
+3200900,2.59417629,1.93847060
+4800850,2.76492023,2.39120364
+6400800,2.86754823,2.88588786
+8000750,2.82027721,2.83405471
+9600700,2.84708953,2.85699630
+11200650,2.72157717,2.73428750
+12800600,2.81504917,2.82419777
+14400550,2.64048982,2.65759659
+16000500,2.71507525,2.74039865
+17600450,2.67612267,2.69381547
+19200400,2.83465409,2.83977175
+20800350,2.66159797,2.67162085
+22400300,2.83831668,2.83709216
+24000250,2.81214762,2.82292199
+25600200,2.81235957,2.85199261
+27200150,2.86877084,2.83540654
+28800100,2.82195997,2.80780649
+30400050,2.86819983,2.83847260
+32000000,2.73366070,2.70586467
+SIMD SSE Multiplication/Reduction vs C++ Multiplication/Reduction
+1000,6.10743427,6.42784452
+1600950,5.60951328,5.54835081
+3200900,4.71454287,4.68798399
+4800850,4.66503572,4.62708950
+6400800,4.63424301,4.60503483
+8000750,4.61627531,4.59267521
+9600700,4.66299868,4.45489264
+11200650,4.73146486,4.71508503
+12800600,4.72537422,4.70709276
+14400550,4.40419292,4.39692640
+16000500,4.61330223,4.50518417
+17600450,4.53109503,4.49876595
+19200400,4.67811871,4.25628328
+20800350,4.51267624,4.47760153
+22400300,4.67248917,4.65856934
+24000250,4.63992500,4.62975025
+25600200,4.60106802,4.57270718
+27200150,4.71085405,4.70002842
+28800100,4.65442038,4.48965359
+30400050,4.65099239,4.59165430
+32000000,3.42222476,3.60304022

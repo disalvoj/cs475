@@ -1,277 +1,386 @@
-Total processors available: 2
+Total processors available: 24
 
 Testing SIMD SSE Multiplication vs C++ Multiplication
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-1000,0.00000301,0.00000301
+1000,0.00000321,0.00000327
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-1000,0.00000058,0.00000058
+1000,0.00000056,0.00000059
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-1000,5.15131569,5.15131569
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+1000,5.74416685,5.57024860
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-1600950,0.00475228,0.00475228
+1600950,0.00530347,0.00538001
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-1600950,0.00103060,0.00103060
+1600950,0.00192645,0.00195657
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-1600950,4.61118937,4.61118937
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+1600950,2.75297999,2.74971294
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-3200900,0.00944238,0.00944238
+3200900,0.01061759,0.01070895
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-3200900,0.00213207,0.00213207
+3200900,0.00409286,0.00552443
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-3200900,4.42873764,4.42873764
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+3200900,2.59417629,1.93847060
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-4800850,0.01408208,0.01408208
+4800850,0.01594711,0.01624030
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-4800850,0.00321200,0.00321200
+4800850,0.00576765,0.00679168
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-4800850,4.38420343,4.38420343
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+4800850,2.76492023,2.39120364
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-6400800,0.02011763,0.02011763
+6400800,0.02125761,0.02150293
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-6400800,0.00524727,0.00524727
+6400800,0.00741317,0.00745106
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-6400800,3.83392119,3.83392119
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+6400800,2.86754823,2.88588786
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-8000750,0.02323278,0.02323278
+8000750,0.02656076,0.02681783
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-8000750,0.00535632,0.00535632
+8000750,0.00941778,0.00946271
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-8000750,4.33745384,4.33745384
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+8000750,2.82027721,2.83405471
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-9600700,0.02839330,0.02839330
+9600700,0.03190611,0.03216082
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-9600700,0.00733523,0.00733523
+9600700,0.01120657,0.01125687
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-9600700,3.87081361,3.87081361
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+9600700,2.84708953,2.85699630
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-11200650,0.03234611,0.03234611
+11200650,0.03714468,0.03750948
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-11200650,0.00747762,0.00747762
+11200650,0.01364822,0.01371819
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-11200650,4.32572269,4.32572269
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+11200650,2.72157717,2.73428750
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-12800600,0.03746433,0.03746433
+12800600,0.04247374,0.04282985
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-12800600,0.00870091,0.00870091
+12800600,0.01508810,0.01516532
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-12800600,4.30579615,4.30579615
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+12800600,2.81504917,2.82419777
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-14400550,0.04150401,0.04150401
+14400550,0.04771204,0.04820940
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-14400550,0.00981804,0.00981804
+14400550,0.01806939,0.01814022
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-14400550,4.22732306,4.22732306
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+14400550,2.64048982,2.65759659
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-16000500,0.04629088,0.04629088
+16000500,0.05324211,0.05407772
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-16000500,0.01093476,0.01093476
+16000500,0.01960981,0.01973352
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-16000500,4.23337078,4.23337078
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+16000500,2.71507525,2.74039865
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-17600450,0.05070555,0.05070555
+17600450,0.05845411,0.05906408
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-17600450,0.01218136,0.01218136
+17600450,0.02184284,0.02192581
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-17600450,4.16255236,4.16255236
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+17600450,2.67612267,2.69381547
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-19200400,0.05561411,0.05561411
+19200400,0.06367909,0.06424509
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-19200400,0.01292532,0.01292532
+19200400,0.02246450,0.02262333
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-19200400,4.30272436,4.30272436
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+19200400,2.83465409,2.83977175
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-20800350,0.06014110,0.06014110
+20800350,0.06934300,0.07000100
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-20800350,0.01380354,0.01380354
+20800350,0.02605315,0.02620170
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-20800350,4.35693359,4.35693359
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+20800350,2.66159797,2.67162085
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-22400300,0.06537265,0.06537265
+22400300,0.07435761,0.07504644
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-22400300,0.01519632,0.01519632
+22400300,0.02619779,0.02645189
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-22400300,4.30187559,4.30187559
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+22400300,2.83831668,2.83709216
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-24000250,0.06928921,0.06928921
+24000250,0.07981694,0.08055072
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-24000250,0.01601953,0.01601953
+24000250,0.02838291,0.02853452
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-24000250,4.32529545,4.32529545
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+24000250,2.81214762,2.82292199
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-25600200,0.07358465,0.07358465
+25600200,0.08191642,0.08417793
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-25600200,0.01718603,0.01718603
+25600200,0.02912729,0.02951548
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-25600200,4.28165483,4.28165483
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+25600200,2.81235957,2.85199261
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-27200150,0.07843199,0.07843199
+27200150,0.08687256,0.08782285
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-27200150,0.01853801,0.01853801
+27200150,0.03028215,0.03097364
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-27200150,4.23087358,4.23087358
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+27200150,2.86877084,2.83540654
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-28800100,0.08269696,0.08269696
+28800100,0.09194242,0.09387136
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-28800100,0.01923126,0.01923126
+28800100,0.03258105,0.03343228
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-28800100,4.30013227,4.30013227
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+28800100,2.82195997,2.80780649
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-30400050,0.08761822,0.08761822
+30400050,0.09700903,0.09843013
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-30400050,0.02061849,0.02061849
+30400050,0.03382227,0.03467714
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-30400050,4.24949694,4.24949694
-
-Testing SIMD SSE Multiplication vs C++ Multiplication
+30400050,2.86819983,2.83847260
 Normal C++ Data:
 Array Size,Peak Speed,Average Speed
-32000000,0.09212847,0.09212847
+32000000,0.10080151,0.10233149
 SIMD SSE Data:
 Array Size,Peak Speed,Average Speed
-32000000,0.02174701,0.02174701
+32000000,0.03687418,0.03781841
 Speedup Data (C++ Speed / SIMD SSE Speed):
 Array Size,Peak Speedup,Average Speedup
-32000000,4.23637390,4.23637390
+32000000,2.73366070,2.70586467
 
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
-
-Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+Testing SIMD SSE Multiplication/Reduction vs C++ Multiplication/Reduction
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+1000,0.00000331,0.00000349
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+1000,0.00000054,0.00000054
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+1000,6.10743427,6.42784452
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+1600950,0.00533744,0.00535823
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+1600950,0.00095150,0.00096573
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+1600950,5.60951328,5.54835081
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+3200900,0.01089751,0.01093826
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+3200900,0.00231147,0.00233326
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+3200900,4.71454287,4.68798399
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+4800850,0.01635120,0.01644000
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+4800850,0.00350505,0.00355299
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+4800850,4.66503572,4.62708950
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+6400800,0.02181615,0.02187808
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+6400800,0.00470760,0.00475090
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+6400800,4.63424301,4.60503483
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+8000750,0.02724556,0.02732729
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+8000750,0.00590207,0.00595019
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+8000750,4.61627531,4.59267521
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+9600700,0.03275930,0.03291463
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+9600700,0.00702537,0.00738842
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+9600700,4.66299868,4.45489264
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+11200650,0.03816000,0.03829532
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+11200650,0.00806515,0.00812187
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+11200650,4.73146486,4.71508503
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+12800600,0.04363006,0.04381436
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+12800600,0.00923314,0.00930816
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+12800600,4.72537422,4.70709276
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+14400550,0.04907672,0.04932738
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+14400550,0.01114318,0.01121860
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+14400550,4.40419292,4.39692640
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+16000500,0.05459365,0.05476603
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+16000500,0.01183396,0.01215622
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+16000500,4.61330223,4.50518417
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+17600450,0.05994622,0.06022080
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+17600450,0.01322996,0.01338607
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+17600450,4.53109503,4.49876595
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+19200400,0.06543299,0.06690125
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+19200400,0.01398703,0.01571823
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+19200400,4.67811871,4.25628328
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+20800350,0.07094249,0.07115306
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+20800350,0.01572071,0.01589089
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+20800350,4.51267624,4.47760153
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+22400300,0.07631008,0.07652204
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+22400300,0.01633178,0.01642608
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+22400300,4.67248917,4.65856934
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+24000250,0.08179786,0.08200336
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+24000250,0.01762913,0.01771226
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+24000250,4.63992500,4.62975025
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+25600200,0.08727891,0.08753059
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+25600200,0.01896927,0.01914196
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+25600200,4.60106802,4.57270718
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+27200150,0.09276745,0.09303580
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+27200150,0.01969228,0.01979473
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+27200150,4.71085405,4.70002842
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+28800100,0.09816960,0.09874398
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+28800100,0.02109169,0.02199367
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+28800100,4.65442038,4.48965359
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+30400050,0.10373068,0.10442465
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+30400050,0.02230291,0.02274227
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+30400050,4.65099239,4.59165430
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+32000000,0.10742153,0.11535432
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+32000000,0.03138939,0.03201583
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+32000000,3.42222476,3.60304022
 
 
 
