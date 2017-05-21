@@ -28,8 +28,8 @@ def main():
 		for size in list(range(start, end, int((end - start)/20))) + [end]:
 			with open(datafile, "a") as f:
 				f.write("\nTesting {}\n".format(test))
-			cmd = ("/usr/local/common/gcc-5.4.0/bin/g++ "
-				   "-DARRAY_SIZE={} -DTEST={} program5.cpp -o program5 -lm "
+			cmd = ("/usr/local/common/gcc-5.4.0/bin/g++ -DARRAY_SIZE={} "
+				   "-DTEST={} program5.cpp simd.p5.cpp -o program5 -lm "
 				   "-fopenmp").format(size, tests.index(test))
 			system(cmd)
 			cmd = "./program5 {}".format(datafile)
