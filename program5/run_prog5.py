@@ -16,34 +16,34 @@ from multiprocessing import cpu_count
 
 
 def main():
-	datafile = "data.csv"
-	#create or truncate the file
-	with open(datafile, "w") as f:
-		f.write("Total processors available: {}\n".format(cpu_count()))
-	start = 1000
-	end = 32000000
-	tests = ["SIMD SSE Multiplication vs C++ Multiplication",
-			 "SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction"]
-	for test in tests:
-		for size in list(range(start, end, int((end - start)/20))) + [end]:
-			with open(datafile, "a") as f:
-				f.write("\nTesting {}\n".format(test))
-			cmd = ("/usr/local/common/gcc-5.4.0/bin/g++ -DARRAY_SIZE={} "
-				   "-DTEST={} program5.cpp simd.p5.cpp -o program5 -lm "
-				   "-fopenmp").format(size, tests.index(test))
-			system(cmd)
-			cmd = "./program5 {}".format(datafile)
-			system(cmd)
-	#append some newlines for nice formatting just because
-	with open(datafile, "a") as f:
-		f.write("\n\n\n")
-	cmd = "rm -f program5"
-	system(cmd)
-	cmd = "cat data.csv"
-	system(cmd)
+    datafile = "data.csv"
+    #create or truncate the file
+    with open(datafile, "w") as f:
+        f.write("Total processors available: {}\n".format(cpu_count()))
+    start = 1000
+    end = 32000000
+    tests = ["SIMD SSE Multiplication vs C++ Multiplication",
+        "SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction"]
+    for test in tests:
+        for size in list(range(start, end, int((end - start)/20))) + [end]:
+            with open(datafile, "a") as f:
+                f.write("\nTesting {}\n".format(test))
+            cmd = ("/usr/local/common/gcc-5.4.0/bin/g++ -DARRAY_SIZE={} "
+                "-DTEST={} program5.cpp simd.p5.cpp -o program5 -lm "
+                "-fopenmp").format(size, tests.index(test))
+            system(cmd)
+            cmd = "./program5 {}".format(datafile)
+            system(cmd)
+    #append some newlines for nice formatting just because
+    with open(datafile, "a") as f:
+        f.write("\n\n\n")
+    cmd = "rm -f program5"
+    system(cmd)
+    cmd = "cat data.csv"
+    system(cmd)
 
 
 if __name__ == "__main__":
-	main()
+    main()
 
 
