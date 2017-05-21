@@ -1,0 +1,63 @@
+Speedup Data (C++ Speed / SIMD SSE Speed)SIMD SSE Multiplication vs C++ Multiplication
+1000,5.15131569,5.15131569
+SIMD SSE Multiplication vs C++ Multiplication
+1600950,4.61118937,4.61118937
+SIMD SSE Multiplication vs C++ Multiplication
+3200900,4.42873764,4.42873764
+SIMD SSE Multiplication vs C++ Multiplication
+4800850,4.38420343,4.38420343
+SIMD SSE Multiplication vs C++ Multiplication
+6400800,3.83392119,3.83392119
+SIMD SSE Multiplication vs C++ Multiplication
+8000750,4.33745384,4.33745384
+SIMD SSE Multiplication vs C++ Multiplication
+9600700,3.87081361,3.87081361
+SIMD SSE Multiplication vs C++ Multiplication
+11200650,4.32572269,4.32572269
+SIMD SSE Multiplication vs C++ Multiplication
+12800600,4.30579615,4.30579615
+SIMD SSE Multiplication vs C++ Multiplication
+14400550,4.22732306,4.22732306
+SIMD SSE Multiplication vs C++ Multiplication
+16000500,4.23337078,4.23337078
+SIMD SSE Multiplication vs C++ Multiplication
+17600450,4.16255236,4.16255236
+SIMD SSE Multiplication vs C++ Multiplication
+19200400,4.30272436,4.30272436
+SIMD SSE Multiplication vs C++ Multiplication
+20800350,4.35693359,4.35693359
+SIMD SSE Multiplication vs C++ Multiplication
+22400300,4.30187559,4.30187559
+SIMD SSE Multiplication vs C++ Multiplication
+24000250,4.32529545,4.32529545
+SIMD SSE Multiplication vs C++ Multiplication
+25600200,4.28165483,4.28165483
+SIMD SSE Multiplication vs C++ Multiplication
+27200150,4.23087358,4.23087358
+SIMD SSE Multiplication vs C++ Multiplication
+28800100,4.30013227,4.30013227
+SIMD SSE Multiplication vs C++ Multiplication
+30400050,4.24949694,4.24949694
+SIMD SSE Multiplication vs C++ Multiplication
+32000000,4.23637390,4.23637390
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction

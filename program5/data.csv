@@ -1,256 +1,277 @@
 Total processors available: 2
 
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing SIMD SSE Mulitpication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
-
-Testing C++ Multiplication/Reduction
-Array Size,Speedup (Peak),Speedup (Ave)
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+1000,0.00000301,0.00000301
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+1000,0.00000058,0.00000058
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+1000,5.15131569,5.15131569
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+1600950,0.00475228,0.00475228
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+1600950,0.00103060,0.00103060
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+1600950,4.61118937,4.61118937
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+3200900,0.00944238,0.00944238
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+3200900,0.00213207,0.00213207
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+3200900,4.42873764,4.42873764
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+4800850,0.01408208,0.01408208
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+4800850,0.00321200,0.00321200
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+4800850,4.38420343,4.38420343
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+6400800,0.02011763,0.02011763
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+6400800,0.00524727,0.00524727
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+6400800,3.83392119,3.83392119
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+8000750,0.02323278,0.02323278
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+8000750,0.00535632,0.00535632
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+8000750,4.33745384,4.33745384
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+9600700,0.02839330,0.02839330
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+9600700,0.00733523,0.00733523
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+9600700,3.87081361,3.87081361
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+11200650,0.03234611,0.03234611
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+11200650,0.00747762,0.00747762
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+11200650,4.32572269,4.32572269
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+12800600,0.03746433,0.03746433
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+12800600,0.00870091,0.00870091
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+12800600,4.30579615,4.30579615
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+14400550,0.04150401,0.04150401
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+14400550,0.00981804,0.00981804
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+14400550,4.22732306,4.22732306
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+16000500,0.04629088,0.04629088
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+16000500,0.01093476,0.01093476
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+16000500,4.23337078,4.23337078
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+17600450,0.05070555,0.05070555
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+17600450,0.01218136,0.01218136
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+17600450,4.16255236,4.16255236
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+19200400,0.05561411,0.05561411
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+19200400,0.01292532,0.01292532
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+19200400,4.30272436,4.30272436
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+20800350,0.06014110,0.06014110
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+20800350,0.01380354,0.01380354
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+20800350,4.35693359,4.35693359
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+22400300,0.06537265,0.06537265
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+22400300,0.01519632,0.01519632
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+22400300,4.30187559,4.30187559
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+24000250,0.06928921,0.06928921
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+24000250,0.01601953,0.01601953
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+24000250,4.32529545,4.32529545
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+25600200,0.07358465,0.07358465
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+25600200,0.01718603,0.01718603
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+25600200,4.28165483,4.28165483
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+27200150,0.07843199,0.07843199
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+27200150,0.01853801,0.01853801
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+27200150,4.23087358,4.23087358
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+28800100,0.08269696,0.08269696
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+28800100,0.01923126,0.01923126
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+28800100,4.30013227,4.30013227
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+30400050,0.08761822,0.08761822
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+30400050,0.02061849,0.02061849
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+30400050,4.24949694,4.24949694
+
+Testing SIMD SSE Multiplication vs C++ Multiplication
+Normal C++ Data:
+Array Size,Peak Speed,Average Speed
+32000000,0.09212847,0.09212847
+SIMD SSE Data:
+Array Size,Peak Speed,Average Speed
+32000000,0.02174701,0.02174701
+Speedup Data (C++ Speed / SIMD SSE Speed):
+Array Size,Peak Speedup,Average Speedup
+32000000,4.23637390,4.23637390
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
+
+Testing SIMD SSE Mulitpication/Reduction vs C++ Multiplication/Reduction
 
 
 

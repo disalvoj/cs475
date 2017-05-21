@@ -16,6 +16,9 @@
 #include <omp.h>
 #include "simd.p5.h"
 
+float A[ARRAY_SIZE];
+float B[ARRAY_SIZE];
+float C[ARRAY_SIZE];
 
 float rand_float(unsigned int *seedp, float low, float high);
 void fill_array(float *arry, int size);
@@ -25,6 +28,7 @@ void fill_array(float *arry, int size);
 //TEST == 0: SIMD SSE multiplication vs C++ multiplication
 //TEST == 1: SIMD SSE mult + reduction vs C++ mult + reduction.
 //argv[1] = name of file to append data to
+//argv[2] = name of file to append speedup data to
 int main(int argc, char *argv[]) {
 	
 #ifndef _OPENMP
@@ -32,12 +36,9 @@ int main(int argc, char *argv[]) {
     return 1;
 #endif
 
-	//open data file	
+	//open data files
 	FILE *datafile = std::fopen(argv[1], "a");
-
-	float A[ARRAY_SIZE];
-	float B[ARRAY_SIZE];
-	float C[ARRAY_SIZE];
+	FILE *speedup_data = std::fopen(argv[2], "a");
 
 	fill_array(A, ARRAY_SIZE);
 	fill_array(B, ARRAY_SIZE);
@@ -47,7 +48,7 @@ int main(int argc, char *argv[]) {
 	float sse_ave_time = 0;
 	float sse_peak_time = 1000000;
 
-	const int loops_for_ave = 100;
+	const int loops_for_ave = 1;
 
 	double t_not;
 	double t;
@@ -138,8 +139,12 @@ int main(int argc, char *argv[]) {
 		"Array Size,Peak Speedup,Average Speedup\n"
 		"%d,%.8f,%.8f\n", ARRAY_SIZE, cpp_peak_time / sse_peak_time, cpp_ave_time / sse_ave_time);
 
+    std::fprintf(speedup_data, "%d,%.8f,%.8f\n", ARRAY_SIZE, cpp_peak_time / sse_peak_time, cpp_ave_time / sse_ave_time);
+
 	std::fclose(datafile);
-			
+
+	std::fclose(speedup_data);			
+
 	return 0;	
 }
 
