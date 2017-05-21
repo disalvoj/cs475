@@ -28,19 +28,19 @@ def main():
         for size in list(range(start, end, int((end - start)/20))) + [end]:
             with open(datafile, "a") as f:
                 f.write("\nTesting {}\n".format(test))
-            cmd = ("/usr/local/common/gcc-5.4.0/bin/g++ -DARRAY_SIZE={} "
+            cmd = ("g++ -DARRAY_SIZE={} "
                 "-DTEST={} program5.cpp simd.p5.cpp -o program5 -lm "
                 "-fopenmp").format(size, tests.index(test))
             system(cmd)
             cmd = "./program5 {}".format(datafile)
-            system(cmd)
-            cmd = "rm -f program5"
             system(cmd)
 #            with open(datafile, "a") as f:
 #                f.write("\nDone Testing.\n")
     #append some newlines for nice formatting just because
     with open(datafile, "a") as f:
         f.write("\n\n\n")
+    cmd = "rm -f program5"
+    system(cmd)
     cmd = "cat data.csv"
     system(cmd)
 
