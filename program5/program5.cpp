@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 	float sse_ave_time = 0;
 	float sse_peak_time = 1000000;
 
-	const loops_for_ave = 100;
+	const int loops_for_ave = 100;
 
 	double t_not;
 	double t;
@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 
 void fill_array(float *arry, int size) {
 	
-	int seed = 0;
+	unsigned int seed = 0;
 
 	for(int i = 0; i < size; i++)
 		arry[i] = rand_float(&seed, -1., 1.);
