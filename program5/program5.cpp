@@ -23,6 +23,9 @@ float C[ARRAY_SIZE];
 float rand_float(unsigned int *seedp, float low, float high);
 void fill_array(float *arry, int size);
 
+void mul(float *A, float *B, float *C, int len);
+float mul_sum(float *A, float *B, int len);
+
 //ARRAY_SIZE is the size of the arrays used for the multiplication/reduction
 //TEST determines which comparisons are being made
 //TEST == 0: SIMD SSE multiplication vs C++ multiplication
@@ -60,11 +63,7 @@ int main(int argc, char *argv[]) {
 
 			//time the C++ multiplication loop
 			t_not = omp_get_wtime();
-			for(int j = 0; j < ARRAY_SIZE; j++) {
-
-				C[j] = A[j]*B[j];
-
-			}
+            mul(A, B, C, ARRAY_SIZE);
 			t = omp_get_wtime();
 			
 			cpp_ave_time += t - t_not;
@@ -96,12 +95,7 @@ int main(int argc, char *argv[]) {
 
 			//time the C++ multiplication/reduction loop
 			t_not = omp_get_wtime();
-			float sum = 0;
-			for(int j = 0; j < ARRAY_SIZE; j++) {
-
-				sum += A[j]*B[j];
-
-			}
+            float sum = mul_sum(A, B, ARRAY_SIZE);
 			t = omp_get_wtime();
 			
 			cpp_ave_time += t - t_not;
@@ -146,6 +140,25 @@ int main(int argc, char *argv[]) {
 	std::fclose(speedup_data);			
 
 	return 0;	
+}
+
+void mul(float *A, float *B, float *C, int len) {
+
+    for(int i = 0; i < len; i++) {
+
+		C[i] = A[i]*B[i];
+
+	}
+
+}
+
+float mul_sum(float *A, float *B, int len) {
+
+    float sum = 0;
+	for(int i = 0; i < len; i++) {
+		sum += A[i]*B[i];
+	}
+    return sum;
 }
 
 void fill_array(float *arry, int size) {
