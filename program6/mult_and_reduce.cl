@@ -10,7 +10,7 @@ ArrayMultReduce( global const float *dA, global const float *dB, local float *pr
     prods[tnum] = dA[gid]*dB[gid];
 
     for(int offset = 1; offset < numItems; offset *= 2) {
-        int mask = 2*offset -1;
+        int mask = 2*offset - 1;
         barrier(CLK_LOCAL_MEM_FENCE);
         if((tnum & mask) == 0)
             prods[tnum] += prods[tnum + offset];
@@ -20,5 +20,4 @@ ArrayMultReduce( global const float *dA, global const float *dB, local float *pr
     if(tnum == 0)
         dC[wgNum] = prods[0];
 
-	dC[gid] = dA[gid] * dB[gid];
 }

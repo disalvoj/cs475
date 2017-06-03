@@ -26,7 +26,7 @@ def main():
             cmd = "./mult_add {} mult_and_add.cl".format(mult_add_data)
             system(cmd)
     for local_size in list(range(32, 257, 32)):
-        for global_size in list(range(1024, 8389633, 262144)):            
+        for global_size in list(range(1024, 20389633, 262144)):
             cmd = ("g++ -DLOCAL_SIZE={} -DGLOBAL_SIZE={} -o mult_reduce mult_and_reduce.cpp "
                 "CL/libOpenCL.so -lm -fopenmp").format(local_size, global_size)
             system(cmd)

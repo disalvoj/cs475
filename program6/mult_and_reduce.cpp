@@ -186,7 +186,7 @@ main( int argc, char *argv[ ] )
 	if( status != CL_SUCCESS )
 		fprintf( stderr, "clSetKernelArg failed (2)\n" );
 
-	status = clSetKernelArg( kernel, 2, (int) GLOBAL_SIZE * sizeof(float), NULL );
+	status = clSetKernelArg( kernel, 2, (int) LOCAL_SIZE * sizeof(float), NULL );
 	if( status != CL_SUCCESS )
 		fprintf( stderr, "clSetKernelArg failed (3)\n" );
 
