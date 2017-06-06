@@ -43,7 +43,7 @@ int main() {
 
 		t_not = omp_get_wtime();
         for(int shift = 0; shift < size; shift++) {
-		    SimdMul(array, &array[shift], sums, size);
+		    sums[shift] = SimdMulSum(array, &array[shift], size);
         }
 		t = omp_get_wtime();
 		
