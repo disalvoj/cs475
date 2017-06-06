@@ -71,10 +71,12 @@ void autocorrelate(float *array, float *sums, int size, int threads, std::string
         ave_time += t - t_not;
         
     }
+    ave_time /= ave_loops;
+    
     std::fprintf(fp, "Threads,Peak Performance (Mega Loops Per Second),"
                 "Average Performance (Mega Loops Per Second)\n");
     std::fprintf(fp, "%d,%lf,%lf\n", threads, (double)size * size / peak_time / 1000000,
-                (double)size * size / (ave_time / ave_loops) / 1000000);
+                (double)size * size / ave_time / 1000000);
     //write out the autocorrelated sums
     std::fprintf(fp, "Index,Sum\n");
     for(int i = 0; i < size; i++)

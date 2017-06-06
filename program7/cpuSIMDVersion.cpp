@@ -9,6 +9,10 @@ Email: kluthej@oregonstate.edu
 #include <cstdio>
 #include "simd.p5.h"
 
+#define SIZE 32768
+float array[2 * SIZE];
+float sums[SIZE];
+
 void autocorrelate(float *array, float *sums, int size, int threads, std::string data_file);
 
 int main() {
@@ -26,8 +30,8 @@ int main() {
     int size;
     fscanf(fp, "%d", &size);
 
-    float *array = new float[2 * size];
-    float *sums  = new float[size];
+    size = SIZE;
+
     for(int i = 0; i < size; i++) {
     	std::fscanf(fp, "%f", &array[i]);
 	    array[i + size] = array[i];
